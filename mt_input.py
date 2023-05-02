@@ -6,3 +6,6 @@ class MtInput:
             input_list = input_data.split('/')
             epoch = int(input_list[0])
             type = input_list[1]
+
+            if type in ('keep', 'change'):
+                return epoch, type
